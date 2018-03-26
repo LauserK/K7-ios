@@ -10,6 +10,7 @@ import Foundation
 
 // Model ProductionOrder
 struct ProductionOrder {
+    var id: String
     var article_name: String
     var required_quantity: Double
     var quantity_completed: Double
@@ -23,6 +24,7 @@ struct ProductionOrder {
     
     
     init(){
+        self.id = ""
         self.article_name = ""
         self.required_quantity = 0
         self.quantity_completed = 0

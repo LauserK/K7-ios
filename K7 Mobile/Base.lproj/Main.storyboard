@@ -475,6 +475,17 @@
                                                                 <constraint firstItem="oW6-Fa-cyI" firstAttribute="leading" secondItem="7qt-6q-2f0" secondAttribute="leading" id="lfl-HR-VGo"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="ArticleName" destination="yGL-NQ-kOB" id="FAt-fh-YVY"/>
+                                                            <outlet property="OPNumber" destination="Qxq-Rp-7Br" id="eKy-mG-Ny3"/>
+                                                            <outlet property="article_image" destination="FfH-0u-WIw" id="Vub-XK-9ku"/>
+                                                            <outlet property="delivery_date" destination="sRB-oz-CtL" id="M3B-jQ-J3e"/>
+                                                            <outlet property="delivery_hour" destination="VkR-od-H9r" id="Fff-Ku-7a7"/>
+                                                            <outlet property="op_type" destination="JQd-5d-emz" id="4y7-iK-PLM"/>
+                                                            <outlet property="quantity_completed" destination="f4o-EE-oSG" id="NDQ-bQ-RRk"/>
+                                                            <outlet property="remaining_quantity" destination="kg1-8m-RKe" id="k0V-7N-dvv"/>
+                                                            <outlet property="required_quantity" destination="Idz-ez-f00" id="fB8-lH-7rj"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <connections>
@@ -921,6 +932,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Zfh-uq-OOb"/>
-        <segue reference="SQ1-pV-tsR"/>
+        <segue reference="KAq-7z-OkK"/>
     </inferredMetricsTieBreakers>
 </document>
