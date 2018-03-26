@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3048D52051DDC50082DF7D /* OPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3048D42051DDC50082DF7D /* OPViewController.swift */; };
+		FA3048D82051DEAC0082DF7D /* ProductionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3048D72051DEAC0082DF7D /* ProductionOrder.swift */; };
+		FA3048DA2051E5510082DF7D /* OPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3048D92051E5510082DF7D /* OPTableViewCell.swift */; };
 		FA571F4820488C9500DEA682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA571F4720488C9500DEA682 /* AppDelegate.swift */; };
-		FA571F4A20488C9500DEA682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA571F4920488C9500DEA682 /* ViewController.swift */; };
 		FA571F4D20488C9500DEA682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA571F4B20488C9500DEA682 /* Main.storyboard */; };
 		FA571F4F20488C9500DEA682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA571F4E20488C9500DEA682 /* Assets.xcassets */; };
 		FA571F5220488C9500DEA682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA571F5020488C9500DEA682 /* LaunchScreen.storyboard */; };
+		FA571F5B20488D4200DEA682 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA571F5A20488D4200DEA682 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA3048D42051DDC50082DF7D /* OPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OPViewController.swift; path = Controllers/OPViewController.swift; sourceTree = "<group>"; };
+		FA3048D72051DEAC0082DF7D /* ProductionOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductionOrder.swift; path = Models/ProductionOrder.swift; sourceTree = "<group>"; };
+		FA3048D92051E5510082DF7D /* OPTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OPTableViewCell.swift; path = Controllers/OPTableViewCell.swift; sourceTree = "<group>"; };
 		FA571F4420488C9500DEA682 /* K7 Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K7 Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA571F4720488C9500DEA682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA571F4920488C9500DEA682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA571F4C20488C9500DEA682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA571F4E20488C9500DEA682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA571F5120488C9500DEA682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA571F5320488C9500DEA682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA571F5A20488D4200DEA682 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA3048D62051DE810082DF7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA3048D72051DEAC0082DF7D /* ProductionOrder.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		FA571F3B20488C9500DEA682 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +68,25 @@
 		FA571F4620488C9500DEA682 /* K7 Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				FA3048D62051DE810082DF7D /* Models */,
+				FA571F5920488D0A00DEA682 /* Controllers */,
 				FA571F4720488C9500DEA682 /* AppDelegate.swift */,
-				FA571F4920488C9500DEA682 /* ViewController.swift */,
 				FA571F4B20488C9500DEA682 /* Main.storyboard */,
 				FA571F4E20488C9500DEA682 /* Assets.xcassets */,
 				FA571F5020488C9500DEA682 /* LaunchScreen.storyboard */,
 				FA571F5320488C9500DEA682 /* Info.plist */,
 			);
 			path = "K7 Mobile";
+			sourceTree = "<group>";
+		};
+		FA571F5920488D0A00DEA682 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA571F5A20488D4200DEA682 /* LoginViewController.swift */,
+				FA3048D42051DDC50082DF7D /* OPViewController.swift */,
+				FA3048D92051E5510082DF7D /* OPTableViewCell.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA571F4A20488C9500DEA682 /* ViewController.swift in Sources */,
+				FA3048DA2051E5510082DF7D /* OPTableViewCell.swift in Sources */,
+				FA3048D52051DDC50082DF7D /* OPViewController.swift in Sources */,
+				FA571F5B20488D4200DEA682 /* LoginViewController.swift in Sources */,
 				FA571F4820488C9500DEA682 /* AppDelegate.swift in Sources */,
+				FA3048D82051DEAC0082DF7D /* ProductionOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3FWNGW7RR4;
 				INFOPLIST_FILE = "K7 Mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paseo78.K7-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3FWNGW7RR4;
 				INFOPLIST_FILE = "K7 Mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paseo78.K7-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +332,7 @@
 				FA571F5820488C9500DEA682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
